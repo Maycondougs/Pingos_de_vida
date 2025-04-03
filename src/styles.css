@@ -1,0 +1,172 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f9f9f9;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: #e53434; /* Cor do cabeçalho */
+  color: white;
+  padding: 0px;
+  align-items: center;
+  justify-content: center; /* Centraliza tudo no cabeçalho */
+  flex-wrap: wrap;
+  text-align: center; /* Centraliza o texto */
+}
+
+.logo {
+  padding: 5px 5px 5px 5px;
+}
+
+.logo img {
+  max-height: auto; /* Ajuste a altura da logo */
+  width: auto; /* Mantém a proporção da imagem */
+}
+
+header h1 {
+  margin: 0px;
+  font-size: 2.5em;
+}
+
+nav {
+  display: flex;
+  justify-content: center; /* Centraliza os links */
+  gap: 20px;
+  width: 100%; /* Ocupa a largura total */
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.section {
+  padding: 20px;
+  max-width: 800px; /* Define uma largura máxima para o conteúdo */
+  margin: 0 auto; /* Centraliza a seção na página */
+  justify-content: center; /* Centraliza os links */
+}
+
+.section h2 {
+  color: #d80300; /* Cor do título */
+  font-size: 2em; /* Tamanho do título */
+  text-align: center; /* Centraliza o título */
+  margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+.carousel {
+  margin: 20px auto; /* Centraliza o carrossel */
+  width: 80%; /* Define a largura do carrossel */
+  max-width: 800px; /* Largura máxima para evitar que fique muito largo */
+}
+
+.carousel img {
+  width: 600px;
+  height: 360px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+
+.section p {
+  text-align: left; /* Alinha o texto à esquerda */
+  margin: 20px auto; /* Centraliza o parágrafo dentro da seção */
+  max-width: 600px; /* Define uma largura máxima para o parágrafo */
+}
+.requirements {
+  text-align: left; /* Alinha o texto da lista à esquerda */
+  max-width: 600px;
+  margin: 0 auto; /* Centraliza a lista na página */
+}
+
+.requirements ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.nav_links {
+  display: flex;
+  justify-content: center; /* Centraliza os ícones horizontalmente */
+  align-items: center; /* Centraliza os ícones verticalmente */
+  gap: 10px; /* Ajuste o espaço entre os ícones se necessário */
+  margin-top: 10px; /* Espaço acima para ajustar a distância */
+}
+
+.nav_links a {
+  text-align: center; /* Certifica que o conteúdo dos links seja centralizado */
+  display: flex; /* Necessário para centralizar o ícone dentro do link */
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_links i {
+  font-size: 24px; /* Ajuste o tamanho do ícone, se necessário */
+  color: #d80300; /* Exemplo de cor, ajuste conforme seu layout */
+}
+
+
+.section a{
+  text-align: center;
+  margin: 20px;
+}
+
+footer {
+  background-color: #d80300; /* Cor do footer */
+  color: white;
+  text-align: center;
+  padding: 10px; /* Reduz o padding para diminuir o tamanho */
+  width: 100%;
+  position: relative; /* Remove o posicionamento fixo */
+  bottom: 0;
+  margin-top: 20px; /* Adiciona espaço acima do footer */
+  font-size: 0.9em; /* Reduz o tamanho da fonte */
+}
+
+footer.visible {
+  display: block; /* Garante que o footer seja exibido */
+}
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column; /* Coloca a logo e o título em coluna */
+  }
+
+  .logo {
+    margin-right: 0; /* Remove o espaço à direita da logo */
+    margin-bottom: 10px; /* Adiciona espaço abaixo da logo */
+  }
+
+  header h1 {
+    font-size: 2em; /* Reduz o tamanho do título */
+  }
+
+  nav {
+    gap: 10px; /* Reduz o espaço entre os links */
+  }
+}
+
+@media (max-width: 480px) {
+  .logo img {
+    max-height: 60px; /* Reduz a altura da logo */
+  }
+
+  header h1 {
+    font-size: 1.5em; /* Reduz ainda mais o tamanho do título */
+  }
+
+  nav a {
+    font-size: 0.9em; /* Reduz o tamanho da fonte dos links */
+  }
+
+  footer {
+    position: static;
+  }
+}
