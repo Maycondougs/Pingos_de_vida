@@ -208,6 +208,12 @@ footer.visible {
     max-height: 60px; /* Reduz a altura da logo */
   }
 
+.logo {
+    margin-right: 0; /* Remove o espaço à direita da logo */
+    margin-bottom: 10px; /* Adiciona espaço abaixo da logo */
+  }
+   
+
   header h1 {
     font-size: 1.5em; /* Reduz ainda mais o tamanho do título */
   }
