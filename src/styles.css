@@ -138,7 +138,7 @@ nav a {
 .toggle-button {
     display: block;
     margin: 10px auto;
-    background-color: #007bff;
+    background-color: #d80300;
     color: white;
     padding: 10px;
     border: none;
@@ -147,7 +147,7 @@ nav a {
 }
 
 .toggle-button:hover {
-    background-color: #0056b3;
+    background-color: #d80300;
 }
 
 
