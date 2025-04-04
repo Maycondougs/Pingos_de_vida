@@ -66,13 +66,13 @@ nav a {
 }
 
 .carousel img {
-  width: 600px;
-  height: 360px;
+  width: 100%; /* Ajusta automaticamente para o tamanho do contêiner */
+  height: auto; /* Mantém a proporção da imagem */
+  max-width: 600px; /* Impede que fique muito grande em telas grandes */
   display: block;
   margin: 0 auto;
   border-radius: 10px;
 }
-
 
 .section p {
   text-align: left; /* Alinha o texto à esquerda */
@@ -110,46 +110,44 @@ nav a {
   color: #d80300; /* Exemplo de cor, ajuste conforme seu layout */
 }
 
-
-.section a{
+.section a {
   text-align: center;
   margin: 20px;
 }
 
 .image-container {
-    text-align: center;
-    margin: 20px 0;
+  text-align: center;
+  margin: 20px 0;
 }
 
 .toggle-box {
-    display: none;
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-top: 10px;
-    text-align: left;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    background: #fff;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+  display: none;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 10px;
+  text-align: left;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 }
 
 .toggle-button {
-    display: block;
-    margin: 10px auto;
-    background-color: #d80300;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
+  display: block;
+  margin: 10px auto;
+  background-color: #d80300;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 .toggle-button:hover {
-    background-color: #d80300;
+  background-color: #d80300;
 }
-
 
 footer {
   background-color: #d80300; /* Cor do footer */
@@ -186,6 +184,16 @@ footer.visible {
   nav {
     gap: 10px; /* Reduz o espaço entre os links */
   }
+
+  .carousel {
+    width: 100%; /* Garante que ocupe a tela toda */
+    max-width: 100%;
+  }
+
+  .carousel img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media (max-width: 480px) {
@@ -203,5 +211,15 @@ footer.visible {
 
   footer {
     position: static;
+  }
+
+  .carousel {
+    width: 100%; /* Garante que ocupe a tela toda */
+    max-width: 100%;
+  }
+
+  .carousel img {
+    width: 100%;
+    height: auto;
   }
 }
