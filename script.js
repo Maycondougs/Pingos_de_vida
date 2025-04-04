@@ -7,3 +7,9 @@
     adaptiveHeight: true,
   });
 });
+function toggleLinks() {
+    var box = document.getElementById('linkBox');
+    box.style.display = (box.style.display === 'none' || box.style.display === '') ? 'block' : 'none';
+};
+
+
