@@ -59,6 +59,12 @@ nav a {
   margin-bottom: 20px; /* Espaço abaixo do título */
 }
 
+.section h3 {
+  text-align: left; /* Alinha o texto à esquerda */
+  margin: 20px auto; /* Centraliza o parágrafo dentro da seção */
+  max-width: 600px; /* Define uma largura máxima para o parágrafo */
+}
+
 
 .carousel {
   margin: 20px auto; /* Centraliza o carrossel */
