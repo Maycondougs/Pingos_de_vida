@@ -59,10 +59,6 @@ nav a {
   margin-bottom: 20px; /* Espaço abaixo do título */
 }
 
-.section h3 {
-  text-align: justify;
-  margin: 20px auto; /* Centraliza o parágrafo dentro da seção */
-}
 
 .carousel {
   margin: 20px auto; /* Centraliza o carrossel */
