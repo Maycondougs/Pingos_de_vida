@@ -59,6 +59,10 @@ nav a {
   margin-bottom: 20px; /* Espaço abaixo do título */
 }
 
+.section h3 {
+text-align: justify;
+}
+
 .carousel {
   margin: 20px auto; /* Centraliza o carrossel */
   width: 80%; /* Define a largura do carrossel */
