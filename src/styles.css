@@ -60,7 +60,7 @@ nav a {
 }
 
 .section h3 {
-  text-align: left; /* Alinha o texto à esquerda */
+  text-align: justify;
   margin: 20px auto; /* Centraliza o parágrafo dentro da seção */
 }
 
