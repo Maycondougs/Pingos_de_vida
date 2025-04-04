@@ -5,7 +5,6 @@ body {
   color: #333;
   background-color: #f9f9f9;
   overflow-x: hidden;
-  overflow-y: hidden;
 }
 
 header {
@@ -176,6 +175,11 @@ footer.visible {
 /* Responsividade */
 
 @media (max-width: 768px) {
+
+  body{
+overflow-x: hidden;
+}
+
   header {
     flex-direction: column; /* Coloca a logo e o título em coluna */
   }
@@ -205,6 +209,11 @@ footer.visible {
 }
 
 @media (max-width: 480px) {
+
+  body{
+overflow-x: hidden;
+}
+
   .logo img {
     max-height: 60px; /* Reduz a altura da logo */
   }
